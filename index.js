@@ -66,7 +66,7 @@ index.get("/api/posts", (req, res, next) => {
         var splitTags = tags.split(",")
 
         splitTags.forEach((element) => {
-            endpoints.push('https://api.hatchways.io/assessment/blog/posts?tag=' + element)
+            endpoints.push('https://XXXXXXXXXXXX/assessment/blog/posts?tag=' + element)
         })
 
         axios.all(endpoints.map((endpoint) => axios.get(endpoint))).then(
